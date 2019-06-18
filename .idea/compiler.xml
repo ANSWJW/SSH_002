@@ -9,5 +9,8 @@
         <module name="SSH_002" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SSH_002" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
