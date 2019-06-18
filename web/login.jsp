@@ -1,19 +1,39 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="java.text.SimpleDateFormat"%>
-<%@ page import="java.util.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <meta charset="utf-8"/>
+    <title>动态显示时间</title>
+
+    <style type="text/css">
+        #times {
+            width: 200px;
+            height: 20px;
+            border: 3px solid black; /*如果不加实线无法显示边框  123456*/
+        }
+    </style>
 </head>
+
 <body>
-This is login.jsp啊1231
-<%
-    Date d = new Date();
-    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    String now = df.format(d);
-%>
+<div id="times">
 
-当前时间：<%=now %>
+</div>
 
+<script type="text/javascript">
+    //得到时间并写入div
+    function getDate() {
+        //获取当前时间
+        var date = new Date();
+        //格式化为本地时间格式
+        var date1 = date.toLocaleString();
+        //获取div
+        var div1 = document.getElementById("times");
+        //将时间写入div
+        div1.innerHTML = date1;
+    }
+
+    //使用定时器每秒向div写入当前时间
+    setInterval("getDate()", 1000);
+</script>
 </body>
 </html>
