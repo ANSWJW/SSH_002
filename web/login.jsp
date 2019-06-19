@@ -17,7 +17,7 @@
 
 <body>
     <div style="text-align: center" id="tips">
-        <h1>温馨提醒您123456</h1>
+        <h1>温馨提醒欧丽敏</h1>
         <h2>现在是北京时间</h2>
     </div>
     <div   id="times">
