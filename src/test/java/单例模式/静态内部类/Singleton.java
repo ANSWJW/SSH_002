@@ -21,10 +21,11 @@ public class Singleton {
         private static final Singleton INSTANCE = new Singleton();
     }
     private Singleton(){
-
+        System.out.println("Singleton初始中");
     }
 
     public static final Singleton getInstance(){
+        System.out.println("getInstance被调用");
         return SingletonHolder.INSTANCE;
     }
 
