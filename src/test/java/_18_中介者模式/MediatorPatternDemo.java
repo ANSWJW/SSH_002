@@ -1,4 +1,4 @@
-package 中介者模式;
+package _18_中介者模式;
 
 public class MediatorPatternDemo {
     public static void main(String[] args) {

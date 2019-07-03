@@ -1,6 +1,6 @@
-package 中介者模式.api;
+package _18_中介者模式.api;
 
-import 中介者模式.User;
+import _18_中介者模式.User;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
-package 中介者模式;
+package _18_中介者模式;
 
-import 中介者模式.api.ChatRoom;
+import _18_中介者模式.api.ChatRoom;
 
 public class User {
     private String name;
